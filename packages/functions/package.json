@@ -1,0 +1,13 @@
+{
+  "name": "@repo/functions",
+  "version": "0.0.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "*"
+  },
+  "main": "./index.ts",
+  "types": "./index.ts"
+}

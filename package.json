@@ -1,6 +1,8 @@
 {
   "private": true,
   "scripts": {
+    "start": "cd apps/mobile && npm run start",
+    "tauri": "cd apps/game-editor && npm run tauri",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
@@ -8,7 +10,8 @@
   },
   "devDependencies": {
     "prettier": "^3.1.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "latest"
   },
   "engines": {
     "node": ">=18"
