@@ -6,7 +6,7 @@ export type CharacterTypes = "a";
 /**キャラクターのテンプレ作成用Class */
 export class CharacterData extends DataManager {
   public static override block_items: Record<string, BlockItem>;
-  public readonly type: CharacterTypes;
+  public readonly type: string; // CharacterTypes;
   public readonly size = { w: 0, h: 0 };
   public readonly view_size = { w: 0, h: 0 };
   public readonly max_hp: number = 1;
@@ -63,6 +63,6 @@ export class CharacterData extends DataManager {
  * キャラクター辞書
  * {type:キャラクター[クラス]} */
 
-export const CharacterDataDic = {
-  a: [() => new CharacterData(CHARACTERS_DATA["a"])],
-};
+// export const CharacterDataDic = {
+//   a: [() => new CharacterData(CHARACTERS_DATA["a"])],
+// };

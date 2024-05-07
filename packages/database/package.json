@@ -1,0 +1,19 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "*"
+  },
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "gen": "npx supabase gen types typescript --project-id wbrgrjkwkqegyndtmddh --schema public > types/supabase.types.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7"
+  }
+}

@@ -5,6 +5,7 @@ export abstract class DataManager {
   public static block_items: Record<string, DataManager> = {};
   public static cores: Record<string, DataManager> = {};
   public static areas: Record<string, DataManager> = {};
+  public static characters_templates: Record<string, DataManager> = {};
   public static frame = 0;
 
   public static player_id = "";
